@@ -19,6 +19,15 @@ const handleUserInput = function() {
     if (key === '\u0003') {
       process.exit();
     }
+    if (key === 'q') {
+      connection.write('Say: Hello');
+    }
+    if (key === 'e') {
+      connection.write('Say: Wow!');
+    }
+    if (key === 'r') {
+      connection.write('Say: I\'ll get you!');
+    }
     if (key === 'w') {
       connection.write('Move: up');
     }
